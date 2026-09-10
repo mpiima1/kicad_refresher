@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mspmo")(type "KiCad")(uri "${KIPRJMOD}/mspmo.kicad_sym")(options "")(descr ""))
+)

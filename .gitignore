@@ -1,0 +1,72 @@
+# Ignore list for KiCAD Projects
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+# Netlist files (exported from Eeschema)
+*.net
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+*.zip
+*.lck
+\#auto_saved_files\#
+demo*project/
+\.vscode
+\.history
+
+
+.mxproject
+
+# ===== CMake / build output =====
+build/
+NonSecure/build/
+Secure/build/
+**/CMakeFiles/
+*.cmake.user
+CTestTestfile.cmake
+*.pdb
+
+# ===== Compiled firmware artifacts =====
+*.o
+*.a
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.d
+*.su
+*.bc
+*.i
+
+# ===== Secure/NonSecure TrustZone glue =====
+Secure_nsclib/*.o
+Secure_nsclib/*.a
+Secure_nsclib/*.lib
+Secure_nsclib/*.elf
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.user
+*.suo
+*.code-workspace
+
+# ===== Tooling caches =====
+.cache/
+**/.cache/
+.clangd
+compile_commands.json
