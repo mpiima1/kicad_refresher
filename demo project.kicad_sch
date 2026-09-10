@@ -4883,6 +4883,12 @@
 		(uuid "aea7eec9-22f9-4845-b7d6-5cc4718c6ec7")
 	)
 	(junction
+		(at 193.04 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1be57e3-e716-4bd5-ba4b-332dc99de533")
+	)
+	(junction
 		(at 224.79 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6232,6 +6238,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 93.98) (xy 254 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b639171c-a5a9-416f-9c8e-4aa062fc1595")
+	)
+	(wire
+		(pts
 			(xy 264.16 88.9) (xy 278.13 88.9)
 		)
 		(stroke
@@ -6352,7 +6368,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 121.92) (xy 193.04 138.43)
+			(xy 193.04 121.92) (xy 193.04 134.62)
 		)
 		(stroke
 			(width 0)
@@ -6652,6 +6668,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 134.62) (xy 193.04 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f78afe84-db8c-44ac-b425-cb43b9bdc30e")
+	)
+	(wire
+		(pts
 			(xy 49.53 53.34) (xy 64.77 53.34)
 		)
 		(stroke
@@ -6740,6 +6766,16 @@
 		)
 		(uuid "0330aaa1-aac1-4e03-9b3a-c6ed3bf1df9f")
 	)
+	(label "SWCLK"
+		(at 118.11 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b9c3715-6a96-40c4-9fff-74fab8a1cdfb")
+	)
 	(label "HFXIN"
 		(at 46.99 85.09 0)
 		(effects
@@ -6760,7 +6796,7 @@
 		)
 		(uuid "2b0871fe-eb51-40cc-a4af-89764b1e08a4")
 	)
-	(label "SCL"
+	(label "I2C_SCL"
 		(at 184.15 124.46 0)
 		(effects
 			(font
@@ -6810,7 +6846,7 @@
 		)
 		(uuid "3eef3f5d-7e4a-46df-b185-0193bd01ba8f")
 	)
-	(label "SDA"
+	(label "I2C_SDA"
 		(at 55.88 93.98 0)
 		(effects
 			(font
@@ -6880,7 +6916,7 @@
 		)
 		(uuid "6cdecb75-2dc2-423d-bb46-29939e49b098")
 	)
-	(label "SDA"
+	(label "I2C_SDA"
 		(at 184.15 119.38 0)
 		(effects
 			(font
@@ -6919,6 +6955,16 @@
 			(justify left bottom)
 		)
 		(uuid "961b9d4d-d957-4405-937f-247245a0cc72")
+	)
+	(label "SWDIO"
+		(at 118.11 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97d80461-1615-475a-a21f-2054d35a0156")
 	)
 	(label "INT1"
 		(at 219.71 119.38 0)
@@ -6980,7 +7026,7 @@
 		)
 		(uuid "e67a2b85-71b6-4848-a384-dc49017d1210")
 	)
-	(label "SCL"
+	(label "I2C_SCL"
 		(at 55.88 91.44 0)
 		(effects
 			(font
@@ -8860,6 +8906,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 193.04 134.62 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e51f996-a568-44e7-945c-8bc722ded15c")
+		(property "Reference" "#FLG07"
+			(at 191.135 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 189.23 134.6199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 193.04 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41e657ab-1dde-465c-8a83-45bd6194cb3e")
+		)
+		(instances
+			(project "demo project"
+				(path "/fec0df47-5383-43eb-b5c3-4e96b04be4f5"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 205.74 137.16 0)
 		(unit 1)
@@ -9446,6 +9571,84 @@
 			(project "demo project"
 				(path "/fec0df47-5383-43eb-b5c3-4e96b04be4f5"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59993af2-d48c-4ad8-ae98-fb571bb4aa2e")
+		(property "Reference" "#PWR035"
+			(at 254 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ca29405-8344-4371-af9f-7c8121338d86")
+		)
+		(instances
+			(project "demo project"
+				(path "/fec0df47-5383-43eb-b5c3-4e96b04be4f5"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)

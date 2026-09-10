@@ -493,7 +493,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -540,14 +540,76 @@
         "wire_width": 6
       },
       {
+        "line_style": 0,
+        "name": "3V3",
+        "pcb_color": "rgb(255, 98, 33)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 98, 33)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "GND",
+        "pcb_color": "rgb(63, 78, 99)",
+        "priority": 3,
+        "schematic_color": "rgb(63, 78, 99)",
+        "tuning_profile": ""
+      },
+      {
+        "bus_width": 6,
+        "line_style": 0,
+        "name": "I2C",
+        "pcb_color": "rgb(226, 29, 255)",
+        "priority": 5,
+        "schematic_color": "rgb(226, 29, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 6,
+        "line_style": 0,
+        "name": "SW",
+        "pcb_color": "rgb(255, 190, 147)",
+        "priority": 4,
+        "schematic_color": "rgb(255, 190, 147)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 6,
+        "line_style": 0,
+        "name": "UART",
+        "pcb_color": "rgb(24, 11, 255)",
+        "priority": 6,
+        "schematic_color": "rgb(24, 11, 255)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
         "bus_width": 12,
         "line_style": 0,
         "name": "USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "pcb_color": "rgb(46, 255, 78)",
+        "priority": 7,
         "schematic_color": "rgb(46, 255, 78)",
         "tuning_profile": "",
         "wire_width": 6
+      },
+      {
+        "line_style": 0,
+        "name": "VBUS",
+        "pcb_color": "rgb(255, 0, 132)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 0, 132)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "XTAL",
+        "pcb_color": "rgb(160, 78, 255)",
+        "priority": 0,
+        "schematic_color": "rgb(160, 78, 255)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -559,6 +621,42 @@
       {
         "netclass": "USB",
         "pattern": "/USB*"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "/UART*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "/I2C*"
+      },
+      {
+        "netclass": "SW",
+        "pattern": "/SW*"
+      },
+      {
+        "netclass": "SW",
+        "pattern": "/NRST"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "VBUS",
+        "pattern": "+VBUS"
+      },
+      {
+        "netclass": "3V3",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "XTAL",
+        "pattern": "/HF*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "/VREF*"
       }
     ]
   },
@@ -702,7 +800,7 @@
         "uuid": "fec0df47-5383-43eb-b5c3-4e96b04be4f5"
       }
     ],
-    "used_designators": "#PWR35",
+    "used_designators": "#FLG7,#PWR35",
     "variants": []
   },
   "sheets": [
