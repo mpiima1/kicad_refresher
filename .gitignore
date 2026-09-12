@@ -23,50 +23,5 @@ fp-info-cache
 demo*project/
 \.vscode
 \.history
+manufacturing/
 
-
-.mxproject
-
-# ===== CMake / build output =====
-build/
-NonSecure/build/
-Secure/build/
-**/CMakeFiles/
-*.cmake.user
-CTestTestfile.cmake
-*.pdb
-
-# ===== Compiled firmware artifacts =====
-*.o
-*.a
-*.elf
-*.hex
-*.bin
-*.map
-*.lst
-*.d
-*.su
-*.bc
-*.i
-
-# ===== Secure/NonSecure TrustZone glue =====
-Secure_nsclib/*.o
-Secure_nsclib/*.a
-Secure_nsclib/*.lib
-Secure_nsclib/*.elf
-
-# ===== Editor / IDE =====
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-*.user
-*.suo
-*.code-workspace
-
-# ===== Tooling caches =====
-.cache/
-**/.cache/
-.clangd
-compile_commands.json
