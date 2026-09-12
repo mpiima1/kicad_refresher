@@ -29,6 +29,19 @@ Followed along with Phil's Lab KiCad 9 hardware design tutorial (TI MSPM0):
 Custom net classes are used for `3V3`, `GND`, `I2C`, `SW`, `UART`, `USB`,
 `VBUS`, and `XTAL`.
 
+![Schematic](screenshots/schematic.png)
+
+## PCB
+
+The board is a compact 2-layer layout with routing done against the custom net
+classes, and a Tag-Connect footprint for SWD debug:
+
+![PCB routing](screenshots/pcb-routing.png)
+
+3D render of the populated top side:
+
+![PCB 3D render (top)](screenshots/pcb-3d-top.png)
+
 ## Repo layout
 
 ```
@@ -37,6 +50,7 @@ demo project.kicad_sch     schematic
 demo project.kicad_pcb     layout
 mspmo.kicad_sym            project-local symbol library (MSPM0, CH340E, ...)
 sym-lib-table              ties the local library to the project
+screenshots/               images used in this README
 demo project-backups/      KiCad automatic backups
 ```
 
